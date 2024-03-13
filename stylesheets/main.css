@@ -1,0 +1,141 @@
+header{ /* balise générale */
+    background-color:rgba(0, 0, 0, 0.5);
+    border-bottom: 0.3em solid rgba(31, 31, 31, 0.8);
+    text-align: justify;
+    top: 0;
+    color: aliceblue;
+    text-shadow: 1px;
+    padding: 0.8rem;
+}
+
+body{
+    background-color: rgb(0, 0, 0) !important;
+}
+
+/* 2 - CARROUSEL */
+.carrousel > article{ /* toutes ce qui est en rapport avec le carrousel*/
+    animation-name: slidein;
+    animation-duration: 7s;
+    color: aliceblue;
+    opacity: 0;
+    padding: 1rem;
+}
+
+.carrousel{ /* pour éviter les bugs de dépassement de page du carrousel */
+    overflow: hidden;
+}
+
+.hidden{ /*class utilisé pour cacher les articles dans carrousel.js */
+    display: none;
+}
+
+@keyframes slidein {  /* animation carrousel slidein + slideout */
+    0% {
+        margin-left: 100%;
+        opacity: 0;
+    }
+    
+    20% {
+        margin-left: 10%;
+        opacity: 1;
+    }
+
+    70% {
+        margin-left: 10%;
+        opacity: 1;
+    }
+
+    100% {
+        margin-left: -50%;
+        opacity: 0;  
+    }
+    
+}
+
+
+/* 3 - ARTICLES (AVEC ET SANS CARROUSEL) */
+.article-title{ /* ici nous avons tout les titres de chaque article */
+    margin-bottom: 1.2rem;
+    font-family: 'Roboto', 'sans-serif';
+    text-align: justify;
+    white-space: nowrap;
+}
+
+.article-description{ /* description de chaque article */
+    font-size: 1.2em;
+    font-family: 'Roboto', 'sans-serif';
+    text-align: justify;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* 4 - NOM DU SITE PRINCIPALE HEADER */
+.home-link{ /* le nom du site dans le header */
+    text-decoration: none !important;
+    color: inherit !important;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+/* 5 - LOGO DU SITE HEADER */
+.logo-top{ /* correspond au logo (img) dans le header */
+    object-fit: contain;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-right: 0.4em;
+    align-self: center;
+}
+
+/* 6 - ICON NAVBAR DU SITE HEADER */
+.navbar-icon{
+    object-fit: contain;
+    height: 32px;
+    width: 32px;
+    float: left;
+    object-position: left;
+    align-self: center;
+    margin-right: 8em;
+}
+
+/* 7 - HEADER NAVBAR */
+.navbar-containercontainer{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+
+img{ /* pour éviter les bugs de taille d'image */
+    max-width: 100%;
+    max-height: 100%;
+}
+.main-content{ /* ensemble des articles */
+    margin: 1.5rem;
+    min-height: 100vh;
+}
+
+footer{ 
+    background-color: #1b1b1bb1;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.footer-link{
+    object-fit: contain;
+    height: 32px;
+    width: 32px;
+    float: right;
+    object-position: left;
+    align-self: center;
+    margin-right: 8em;
+}
+
+p{ /* pour enlever la marge par défaut de chaque paragraphe */
+    margin: 0;
+}
+
+.navbar-container.container{
+    margin-left: 0px;
+    margin-right: 0px;
+}
