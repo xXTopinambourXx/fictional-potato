@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="./stylesheets/main.css">
-        <link href=".\Libs\bootstrap-4.0.0\dist\css\bootstrap.min.css" rel="stylesheet">
-        <title>Lardon</title>
-    </head>
-    <body>
-        <header id="navbar">
-            <nav class="navbar-container container">
-                <a href="./views/pages/admin.php" class="navbar-icon">
-                    <img src=".\assets\imgs\navbar-logo-header.png">
-                </a>
-                <a href="/" class="home-link">
-                    <div class="logo-top">
-                        <img src=".\assets\imgs\bitcoin-logo-header.png">
-                    </div>
-                    <div class="name-top">
-                        Gros Lardon
-                    </div>
-                </a>
-            </nav>
-        </header>
-            <div class="main-content">
+<?php include "./views/includes/header.php"; ?>
                 <div id="carrousel" class="carrousel">
                     <article>
                         <h2 class="article-title">Ouverture du site</h2>
@@ -71,15 +42,7 @@
                         <p class="article-description">Contenu de la deuxième section.</p>
                     </section>
                 </div>
-            </div>
-    
-        <footer>
-            <p>© 2024 Gros Lardon By Benjamin
-            <a href="https://discord.gg/hSGfZtv2" target= _blank class="footer-link"><img src="assets\imgs\discord-logo-footer.png"></a>
-            </p>
-        </footer>
-    </body>
-    <script src="./scripts/carrousel.js"></script>
-</html>
+            <script src="./scripts/carrousel.js"></script>
+        <?php include "./views/includes/footer.php"; ?>
 
 <!-- 3 points à l'exam sur une fonction de callback -->
