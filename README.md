@@ -1,5 +1,5 @@
-﻿# I wait for a new website name
+﻿# Bitking
 
-## message for Ubrain
+## How to use
 
-if you want to change something in it, explain every line you changed, it's even difficult for me to read my own code so please put some explanations
+Very simple, all the website works on index.php with wamp or apache do what you want with it, commit as far as you want, I will certainly push it but please give some advice and explanations for every line of your modifications.

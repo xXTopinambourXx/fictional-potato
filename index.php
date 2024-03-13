@@ -13,14 +13,14 @@
                         <p class="article-description">
                             33 bugs fixed (withdrawal, referrals, and many more...)<br>
                             New Features ! Discover Lottery and Boosters activity !<br>
-                            <a href="./views/pages/updates.php" class="shortcut-pages">click here to see more</a>
+                            <a href="./views/pages/updates.php" class="hyperlink-pages">click here to see more</a>
                         </p>
                     </article>
                     <article>
                         <h2 class="article-title">Update : referrals</h2>
                         <p class="article-description">
                             Invite your friends and wins up to <strong>20%</strong> of their gains !<br>
-                            Click <a href="./view/pages/referrals.php" class="shortcut-pages">here</a> for all informations.<br>
+                            Click <a href="./view/pages/referrals.php" class="hyperlink-pages">here</a> for all informations.<br>
                         </p>
                     </article>
                     <article>
@@ -28,7 +28,7 @@
                         <p class="article-description">
                             Play big, Win big ! With the new lottery system win up to <strong>300k</strong> satoshis !<br>
                             Get free tickets by playing <strong>dice</strong> or <strong>plinko</strong>.<br>
-                            Or else you can buy them <a href="./views/pages/lottery.php" class="shortcut-pages">here</a> !<br>
+                            Or else you can buy them <a href="./views/pages/lottery.php" class="hyperlink-pages">here</a> !<br>
                         </p>
                     </article>
                     <article>
