@@ -8,7 +8,7 @@
         </div>
         <div class="form-pswd container">
             <label for="pswd">Password&nbsp;</label><br>
-            <input type="password" id="pswd" name="userPswd" minlength="9" />
+            <input type="password" id="pswd" name="userPswd" minlength="7"/>
         </div>
         <div class="form-submit-button container">
             <button type="submit">Log in</button>
