@@ -17,7 +17,7 @@
                 <a href="/topi/views/pages/admin.php" class="navbar-icon">
                     <img src="\topi\assets\imgs\navbar-logo-header.png">
                 </a>
-                <a href="/" class="home-link">
+                <a href="/topi/" class="home-link">
                     <div class="header-logo">
                         <img src="\topi\assets\imgs\bitcoin-logo-header.png">
                     </div>
