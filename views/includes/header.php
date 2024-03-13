@@ -25,6 +25,8 @@
                         Gros Lardon
                     </div>
                 </a>
+                <a href="/topi/views/pages/users/login.php" class="login-button">Log in</a>
+                <a href="/topi/views/pages/users/signup.php" class="signup-button">Sign up</a>
             </nav>
         </header>
             <div class="main-content">
