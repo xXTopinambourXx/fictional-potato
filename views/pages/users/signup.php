@@ -1,6 +1,6 @@
-<?php include "../../includes/header.php"; ?>
+<?php include "../../includes/header.php";?>
 
-<form method="post" action="./data.php">
+<form method="post" action="./signup.php">
     <div class="form-container container">
         <div class="form-name container">
             <label for="name">Name&nbsp;</label><br>
@@ -16,10 +16,22 @@
         </div>
         <div class="form-confirm-pswd container">
             <label for="conf-pswd">Confirm Password&nbsp;</label><br>
-            <input type="password" id="conf-pswd" name="userPswd" minlength="7"/>
+            <input type="password" id="conf-pswd" name="userPswdConf" minlength="7"/>
         </div>
         <div class="form-submit-button container">
             <button type="submit">Sign up</button>
+        </div>
+        <div class="authentification">
+            <?php
+                $name = htmlspecialchars($_POST["userName"]);
+                $mail = htmlspecialchars($_POST["userEmail"]);
+                $pswd = htmlspecialchars($_POST["userPswd"]);
+                $confPswd = htmlspecialchars($_POST["userPswdConf"]);
+
+                if($pswd != $confPswd) {
+                    echo "<p>Veuillez confirmer <strong>le bon</strong> mot de passe !</p>";
+                }
+            ?>
         </div>
     </div>
 </form>

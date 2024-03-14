@@ -1,4 +1,4 @@
-CREATE TABLE Utilisateurs (
+CREATE TABLE utilisateurs (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
@@ -6,13 +6,13 @@ CREATE TABLE Utilisateurs (
 );
 
 -- Exemple d'insertion d'un utilisateur
-INSERT INTO Utilisateurs (nom, email, mot_de_passe)
+INSERT INTO utilisateurs (nom, email, mot_de_passe)
 VALUES ('Dupont', 'dupont@example.com', 'motdepasse123');
 
 -- Ajoutez d'autres utilisateurs en utilisant des requêtes similaires.
 
-INSERT INTO Utilisateurs (nom, email, mot_de_passe)
+INSERT INTO utilisateurs (nom, email, mot_de_passe)
 VALUES ('Martin', 'martin@example.com', 'motdepasse456');
 
-INSERT INTO Utilisateurs (nom, email, mot_de_passe)
+INSERT INTO utilisateurs (nom, email, mot_de_passe)
 VALUES ('Lefebvre', 'lefebvre@example.com', 'secret123');

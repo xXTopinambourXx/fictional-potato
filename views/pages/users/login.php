@@ -1,6 +1,6 @@
 <?php include "../../includes/header.php"; ?>
 
-<form method="post" action="./data.php">
+<form method="post" action="../../includes/pdo.php">
     <div class="form-container container">
         <div class="form-mail container">
             <label for="mail">E-mail&nbsp;</label><br>
