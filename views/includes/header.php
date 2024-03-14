@@ -8,8 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="/topi/stylesheets/main.css">
+        <?php foreach($cssPaths as $path) { ?>
+            <link rel="stylesheet" href="<?php echo $path; ?>">
+        <?php } ?>
         <link href="\topi\Libs\bootstrap-4.0.0\dist\css\bootstrap.min.css" rel="stylesheet">
-        <title>Lardon</title>
+        <title><?php echo $pageTitle; ?></title>
     </head>
     <body>
         <header id="navbar">

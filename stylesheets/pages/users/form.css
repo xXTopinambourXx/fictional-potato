@@ -1,0 +1,7 @@
+.form-container label {
+    color:aliceblue;
+}
+
+.form-container input:invalid {
+    outline: 3px solid red;
+}

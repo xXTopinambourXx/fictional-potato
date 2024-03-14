@@ -1,4 +1,6 @@
-<?php include "./views/includes/header.php"; ?>
+<?php 
+$pageTitle = "Accueuil";
+include "./views/includes/header.php"; ?>
                 <div id="carrousel" class="carrousel">
                     <article>
                         <h2 class="article-title">Ouverture du site</h2>
