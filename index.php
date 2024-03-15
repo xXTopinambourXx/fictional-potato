@@ -1,6 +1,8 @@
 <?php 
-$pageTitle = "Accueuil";
-include "./views/includes/header.php"; ?>
+    $pageTitle = "Accueuil";
+    
+    include_once("./views/includes/header.php");
+?>
                 <div id="carrousel" class="carrousel">
                     <article>
                         <h2 class="article-title">Ouverture du site</h2>
@@ -45,6 +47,10 @@ include "./views/includes/header.php"; ?>
                     </section>
                 </div>
             <script src="./scripts/carrousel.js"></script>
-        <?php include "./views/includes/footer.php"; ?>
+            
+
+<?php 
+    include_once("./views/includes/footer.php"); 
+?>
 
 <!-- 3 points à l'exam sur une fonction de callback -->
