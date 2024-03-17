@@ -25,6 +25,7 @@
     } ?>
     <link rel="stylesheet" href="\topi\Libs\bootstrap-4.0.0\dist\css\bootstrap.min.css">
     <title><?php echo $pageTitle; ?></title>
+    
 </head>
 
 <body>

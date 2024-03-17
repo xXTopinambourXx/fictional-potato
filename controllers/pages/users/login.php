@@ -1,9 +1,10 @@
 <?php
 
 include_once("../../../views/pages/users/login.php");
+include_once("../../../controllers/includes/pdo.php");
 
 $name = htmlspecialchars($_POST["userName"]);
-$mail = htmlspecialchars($_POST["userEmail"]);
+$email = htmlspecialchars($_POST["userEmail"]);
 $pswd = $_POST["userPswd"];
 $confPswd = $_POST["userPswdConf"];
 
@@ -15,7 +16,7 @@ if ($confPswd != $pswd) {
 
     $errorState = "USERNAME_OUT_OF_RANGE";
 
-} else if (strlen($mail) > 150 || !filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+} else if (strlen($email) > 150 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
     $errorState = "EMAIL_INVALID";
 
@@ -25,8 +26,27 @@ if ($confPswd != $pswd) {
 
 } else {
 
-    $sql = "INSERT INTO `bitking` VALUES ('', '$name', '$mail', '$pswd')";
-	$conn->exec($sql);
+    // test si l'email existe déjà
+    $emailExists_stmt = $conn->prepare("SELECT email FROM users WHERE email = :email ");
+    $emailExists_stmt->bindParam(':email', $email);
+    $emailExists_stmt->execute();
+    $emailExistsResult = $emailExists_stmt->fetch();
+
+    if ($emailExistsResult) {
+
+        $errorState = "EMAIL_ALREADY_EXISTS";
+
+    } else {
+
+        $createUser_stmt = $conn->prepare("INSERT INTO `users` (`username`, `email`, `password`) VALUES (:username, :email, :pswd)");
+        $createUser_stmt->bindParam(':username', $name);
+        $createUser_stmt->bindParam(':email', $email);
+        $createUser_stmt->bindParam(':pswd', $pswd);
+        $createUser_stmt->execute();
+
+    }
 
 }
+
+
 ?>
