@@ -1,7 +1,22 @@
 .form-container label {
     color:aliceblue;
+    text-align: left;
 }
 
 .form-container input.invalid {
     outline: 3px solid red;
+}
+
+.form-container.container {
+    text-align: center;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+}
+
+form-submit-button.container{
+    margin-top: 1em;
 }

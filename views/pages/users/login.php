@@ -28,12 +28,12 @@ $hasError = isset($errorState);
                 <label for="mail">Email address&nbsp;</label><br>
                 <input type="email" id="mail" placeholder="Email address" name="userEmail" required />
                 <?php if ($hasError) { ?>
-                    <?php if ($errorState == "EMAIL_INVALID" ) { ?>
+                    <?php if ($errorState == "EMAIL_INVALID") { ?>
                         <p>E-mail invalid</p>
                     <?php } else if ($errorState == "EMAIL_ALREADY_EXISTS") { ?>
                         <p>E-mail already exists</p>
-                    <?php }
-                    } ?>
+                <?php }
+                } ?>
             </div>
 
             <div class="form-pswd container">
@@ -46,7 +46,7 @@ $hasError = isset($errorState);
 
             <div class="form-confirm-pswd container">
                 <label for="conf-pswd">Confirm Password&nbsp;</label><br>
-                <input type="password" id="conf-pswd" name="userPswdConf" minlength="7" required />
+                <input type="password" id="conf-pswd" name="userPswdConf" minlength="7" required /><br>
             </div>
 
             <div class="form-submit-button container">
@@ -68,16 +68,16 @@ $hasError = isset($errorState);
         <div class="form-container container">
             <div class="form-mail container">
                 <label for="mail">Email address&nbsp;</label><br>
-                <input type="email" id="mail" placeholder="Email address" name="userEmail" required />
+                <input type="email" id="email" placeholder="Email address" name="userLoginEmail" required />
                 <?php if ($hasError && $errorState == "EMAIL_INVALID") { ?>
-                    <p style="color:red">E-mail invalid</p>
+                    <p>E-mail invalid</p>
                 <?php } ?>
             </div>
             <div class="form-pswd container">
                 <label for="pswd">Password&nbsp;</label><br>
-                <input type="password" id="pswd" placeholder="Password" name="userPswd" maxlength="255" required />
+                <input type="password" id="pswd" placeholder="Password" name="userLoginPswd" maxlength="255" required />
                 <?php if ($hasError && $errorState == "PASSWORD_OUT_OF_RANGE") { ?>
-                    <p style="color:red">Password out of range</p>
+                    <p>Password out of range</p>
                 <?php } ?>
             </div>
         </div>
